@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Album Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Interactive Album Collection</h1>
+
+    <!-- Form to add a new album -->
+    <div class="form-container">
+        <h2>Add a New Album</h2>
+        <form id="albumForm">
+            <label for="albumName">Album Name:</label>
+            <input type="text" id="albumName" required><br>
+        
+            <label for="albumCover">Album Cover Image:</label>
+            <input type="file" id="albumCover" accept="image/*" required><br>
+        
+            <label for="songList">Songs (comma-separated):</label>
+            <input type="text" id="songList" placeholder="Song 1, Song 2, Song 3" required><br>
+        
+            <button type="submit">Add Album</button>
+        </form>
+        
+    </div>
+
+    <!-- Container to hold albums -->
+    <div class="album-container" id="albumContainer">
+        <!-- Dynamically added albums will appear here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
