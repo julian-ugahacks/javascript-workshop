@@ -1,0 +1,105 @@
+/* General page styling */
+body {
+    font-family: "Luckiest Guy", cursive;
+    background-color: #000000;
+    color: #5e16eb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    background-color: #c49cf2;
+    color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 80px; /* Adds space below the fixed header */
+}
+
+h2 {
+    color: #ffffff;
+}
+
+/* Form styling */
+.form-container {
+    background-color: #5e16eb;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(248, 245, 245, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #e53a37;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+}
+
+button:hover {
+    background-color: #cfb602;
+    color: #5e16eb;
+}
+
+/* Album container styling */
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.album {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.album img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.album .songs {
+    margin-top: 10px;
+}
